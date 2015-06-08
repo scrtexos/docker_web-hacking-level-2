@@ -35,6 +35,7 @@ RUN php5enmod mcrypt
 RUN apt-get update && apt-get install -y php5-xsl
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get install -y mysql-server-5.6
+RUN apt-get install -y php5-mysql
 
 RUN echo "allow_url_include = On" >> /etc/php5/apache2/php.ini
 
